@@ -62,8 +62,11 @@ Ivan Estropigan
 
 - What will this code do?
 - Note: age is a given variable with a value of 18:
-- if age < 13: 
+
+```Csharp 
+if age < 13: 
     print("Child")
+``` 
 
 ## IF-ELSE STATEMENT
 
@@ -73,5 +76,6 @@ Ivan Estropigan
 
 ``` csharp
     ""if age < 13: 
-    print("Child") else: print("Teen or Adult")}
+    print("Child") 
+    else: print("Teen or Adult")
 ```
