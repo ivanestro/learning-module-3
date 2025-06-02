@@ -35,10 +35,10 @@ Ivan Estropigan
 ## INTRODUCTION TO LOGIC AND LOOPS - PROPER INDENTATION 
 
 - In python indentation is essential for defining code blocks within control structues, loops and functions. 
-1. By adding indentation, we seperate the code into sections and subsections.
+  - By adding indentation, we seperate the code into sections and subsections.
 
 - Unlike other programming languages that use brackets or keyboard to denote code blocks, python relies on indentation.
-1. Proper indentation improves code readability and makes it easier to understand and maintain.
+  - Proper indentation improves code readability and makes it easier to understand and maintain.
 
 ## PYTHON CONDITIONAL STATEMENTS
 
@@ -63,7 +63,7 @@ Ivan Estropigan
 - What will this code do?
 - Note: age is a given variable with a value of 18:
 
-```Csharp 
+```csharp 
 if age < 13: 
     print("Child")
 ``` 
@@ -79,3 +79,28 @@ if age < 13:
     print("Child") 
     else: print("Teen or Adult")
 ```
+
+## IF-ELIF-ELSE STATEMENT
+
+- Modify the statement to add the following elif-else block:
+- What will this code do?
+- Note: age is given variable with a value of 18:
+
+```csharp
+if age < 13:
+    print("Child")
+elif age < 18: 
+    print("Teenager")
+elif age < 20:
+    print("Young Adult")
+else:
+    print("Adult")
+```
+
+## NESTED CONDITIONALS
+
+- Nested conditionals can be useful for creating more complex decision structures.
+
+- If the outer expression evaluates to True, then the nested condition is evaluated:
+
+- "If I have a car, I should make sure it is in good condition:"
