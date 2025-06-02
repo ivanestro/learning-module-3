@@ -251,3 +251,187 @@ if searched_fruit in fruits:
 else:
     print(searched_fruit, "not_ found")
 ```
+## PROGRAMMOING LOOPS
+
+- Loops are used in programming to execute a block of code multiple times, based on some condition or sequence of data.
+
+- In Python, there are two types of loops: for loops amd while loops.
+
+- For loops are used to iterate over a sequence (such as a list, tuple, dictionary, or string) and execute a block of code for each element in the sequence.
+
+- While loops are used to execute a block of code multiple times, based on a specific condition.
+  - The loop will continue to execute the block of code until the condition is no longer true.
+  While loops are best when you don't know exactly how many iterations are needed.
+
+## PROGRAMMING LOOPS - FOR LOOP
+
+- For loops are used to iterate over a sequence (such as a list, tuple, dictionary, or string) and execute a block of code for each element in the sequence
+
+- Modify module_03_loops.py to include the student as the author and add this code:
+
+## PROGRAMMING LOOPS - RANGE FUNCTION
+
+- The range function can define a range of values.
+- The arguments work in similar fashion as those used with slicing:
+
+  - Start (optional): This is the starting value of the sequence.
+        - It Specifies where the sequence of numbers should begin. 
+        - If not provided, it is default to 0.
+
+  - Stop (required): This is the ending value of the sequence.
+        - The range() function generates numbers up to but not including this value.
+        - It is a required parameter and you must specify it.
+
+  - Step (optional): This is the step size or the increment by which the sequence should proceed. 
+        - It determines the difference between each consecutive value in the sequence.
+        - If not provided, it defaults to 1. 
+
+## PROGRAMMING LOOPS - FOR LOOP
+
+- A for loop can be applied to the result of a range function to iterate through the range of numbers:
+- Here are some examples, you can just replace each example with the next: 
+
+```csharp 
+for i in range(10): #0 -> 9
+    print(i)
+
+for i in range(2, 8): # 2 -> 7
+    print(i)
+
+for i in range(1, 10, 2) # 1 - > 9 by 2 
+    print(i)
+
+for i in range (-10, 0): # -10 -> 0
+    print(i)
+```
+
+## PROGRAMMING LOOPS - INPUT FUNCTION 
+
+- The input function returns the user's input based on their response to the input's prompt.
+  - "Hello! What is your name?" 
+
+- The input function always returns the data as a string.
+    - Therefore, the result of the input function may need to be cast to another data type.
+    - "Hello! How old are you?" 
+
+- Go to #INPUT and add this code: 
+
+```csharp 
+name = input("What is your name?")
+salary = float(input("What is your current salary?"))
+
+# What is this \n below? : It is to tab down 
+# print(f"Name: {name} \nSalary: ${salary:,.2f}")
+```
+
+## PROGRAMMING LOOP - WHILE LOOP
+
+- While loops are used to execute a block of code multiple times, based on a sepcific condition.
+
+- The loop will continue to execute the block of code until the condition is no longer true.
+    - While loops are best used when you don't know exactly how many iterations are needed.
+- Go to # WHILE LOOP and add this code:
+
+```csharp
+favourite_number = 0 
+while favourite_number < = 100: 
+    favoureite_number = int(input("Enter your favourite number, 100 % up to quit: "))
+```
+
+- In Python, the else block can be applied to a while loop.
+
+- The else block of a while loop is executed when the loop's conditional expressions becomes False, and the loop exits normally (that is, not through a break statement.)
+  - The else block is skipped if the loop terminates prematurely using break.
+- Modify the while loop as follows to include an else block:
+
+```csharp
+favourite_number = 0
+while favourite_number < 100:
+    favourite_number = int(input("Enter your favourite number, 100 & up to quit:"))
+
+else:
+    print("Your favourite number is too big!")
+```
+
+- We can use the "break" statement to exit a loop early
+- Modify the while loop as follows to include a break statement:
+
+```csharp
+favourite_number = 0 
+while favourite_number < 100:
+    favourite_number = int(input("Enter your favourite number (but not 7!, 100 & up to quit:"))
+
+    if favourite_number == 7:
+        print("You broke this game!")
+        break
+
+else: 
+    print("Your favourite number is too big!")
+```
+
+## LOOP CONTROL STATEMENTS - CONTINUE
+
+- Loop control statement change the flow of loops during execution.
+  - ``continue``: Skips the remaining code in the current iteration and starts the next iteration. 
+  - ``break``: Terminates the loop and exits.
+
+- Go to # LOOP CONTROL STATEMENTS and add this ``continue`` codee: 
+
+```csharp
+# CONTINUE
+# USE a for loop to iterate over the range of integers from 1 to 9 (exclusive).
+for number in range (1, 10):
+    # Use continue statement to skip over multiples of 3.
+    if number % 3 == 0:
+
+        continue
+    # Print all other integers 
+    print(number)
+
+# Output: 1, 2, 4, 5, 7, 8
+```
+
+# LOOP CONTROL STATEMENTS - BREAK
+
+- Loop control statements change the flow of loops during execution.
+    - ``continue``: Skips the remaining code in the current iteration and starts the next iteration.
+    - ``break``: Terminates the loop and exits.
+- Go to # LOOP CONTROL STATEMENTS and add this break code:
+
+```csharp
+#BREAK
+# USE a for loop to iterate over the range of integers
+for number in range (1, 10):
+    # Use the break statement to exit the loop if the integer is greater than 5
+    if number > 5: 
+        break
+    # Print all other integers.
+    print(number)
+
+# Output: 1, 2, 3, 4, 5
+```
+
+## INFINITE LOOPS, HOW TO AVOVID THEM
+
+- Infinite loops occur when the loop's condition never becomes false, causing the loop to run indefinitely.
+
+- To avoid infinite loops, ensure that there's a way for the loop condition to become false at some point during execution.
+
+- Go to #INFINITE LOOP and add this code:
+
+```csharp
+number = 10
+while number > 0:
+    number += 1
+    print(number)
+
+# How could we avoid this?
+
+# To prevent the infinite loop
+number = 10 
+while number > 0:
+    if number > 100:
+        break
+    number += 1
+    print(number)
+```
