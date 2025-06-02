@@ -2,6 +2,8 @@
 age = 18
 sibling_age = 9
 
+fruits = ['banana', 'strawberry', 'cherry']
+
 number = 0
 horizontal_position = 0
 vertical_position = 0
@@ -72,8 +74,70 @@ print("Even" if number % 2 == 0 else "Odd")
 # Checking with Conditionals
 searched_fuit = "banana"
 
-if searched_fruit in fruits:
-    print("Found", searched_fruit)
+#if searched_fruit in fruits:
+#    print("Found", searched_fruit)
 
-else:
-    print(searched_fruit, "not_ found")
+#else:
+#    print(searched_fruit, "not_ found")
+
+# Iterate through a collection (list of fruit):
+# 'fruit' isnew (temporary) variable which is 
+# available only withinthe for loop block.
+for fruit in fruits: 
+    print("fruit")
+
+for i in range(10): #0 -> 9
+    print(i)
+
+for i in range(2, 8): # 2 -> 7
+    print(i)
+
+for i in range(1, 10, 2): #Starts at 1 and increment by 2 1- > 9 
+    print(i)
+
+for i in range (-10, 0): # -10 -> 0
+    print(i)
+
+
+name = input("What is your name?")
+salary = float(input("What is your current salary?"))
+
+print(f"name: {name} \nSalary: ${salary:.2f}")
+# what is this \n below?
+# print(f"Name: {name} \nSalary: ${salary:,.2f}")
+
+# PROGRAMMING LOOPS - WHILE LOOP
+favourite_number = 0
+while favourite_number < 100:
+    favourite_number = int(input("Enter your favourite number (but not 7!), 100 & up to quit: "))
+
+    if favourite_number == 7:
+        print("You broke this game!")
+        break
+    
+else: 
+    print("Your favourite number is too big!")
+
+# CONTINUE
+# USE a for loop to iterate over the range of integers from 1 to 9 (exclusive).
+for number in range (1, 10):
+    # Use continue statement to skip over multiples of 3.
+    if number % 3 == 0:
+
+        continue
+    # Print all other integers 
+    print(number)
+
+# Output: 1, 2, 4, 5, 7, 8
+
+
+#BREAK
+# USE a for loop to iterate over the range of integers
+for number in range (1, 10):
+    # Use the break statement to exit the loop if the integer is greater than 5
+    if number > 5: 
+        break
+    # Print all other integers.
+    print(number)
+
+# Output: 1, 2, 3, 4, 5
