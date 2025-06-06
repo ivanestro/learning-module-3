@@ -8,19 +8,19 @@
 
 Ivan Estropigan
 
-## INTRODUCTION TO LOGIC AND LOOPS - CONTROL STRUCTURES: 
+## INTRODUCTION TO LOGIC AND LOOPS - CONTROL STRUCTURES
 
-- Control Structures are essential in programming because they allow you to control the flow of your code. 
+- Control Structures are essential in programming because they allow you to control the flow of your code.
 
 - There are three types of control strucutres: Sequential, selection and iteration.
 
   1. Sequential statements are executed in the order they are written
-  2. Selection statements are executed based on a condition. 
+  2. Selection statements are executed based on a condition.
   3. Iteration statements are executed repeatedly.
 
 - Control structures enable you to create more complex programs that can perform different tasks based on specific conditions.
 
-## INTRODUCTION TO LOGIC AND LOOPS - PYTHON CONTROL STRUCTURES 
+## INTRODUCTION TO LOGIC AND LOOPS - PYTHON CONTROL STRUCTURES
 
 - In Python the primary control structures are conditional statements and loops.
 
@@ -28,16 +28,16 @@ Ivan Estropigan
   - "If it is raining outside, I will grab an umbrella" (otherwise I will not)
   - "If it is a weekday, I will wake up at 6am, otherwise I will wake up at 8am"
 
-- Loops enable you to perform the same operation multiple times without writing the same code repeatedly, making your code more efficent and easier to maintain.
+- Loops enable you to perform the same operation multiple times without writing the same code repeatedly, making your code more efficient and easier to maintain.
 
   - "For each grocery item on the conveyer belt I will: grab it, scan it, put it in a bag."
 
   - "As long as the pool is not filled, I will add water to it."
 
-## INTRODUCTION TO LOGIC AND LOOPS - PROPER INDENTATION 
+## INTRODUCTION TO LOGIC AND LOOPS - PROPER INDENTATION
 
-- In python indentation is essential for defining code blocks within control structues, loops and functions. 
-  - By adding indentation, we seperate the code into sections and subsections.
+- In python indentation is essential for defining code blocks within control structures, loops and functions. 
+  - By adding indentation, we separate the code into sections and subsections.
 
 - Unlike other programming languages that use brackets or keyboard to denote code blocks, python relies on indentation.
   - Proper indentation improves code readability and makes it easier to understand and maintain.
@@ -65,10 +65,10 @@ Ivan Estropigan
 - What will this code do?
 - Note: age is a given variable with a value of 18:
 
-```csharp 
+```csharp
 if age < 13: 
     print("Child")
-``` 
+```
 
 ## IF-ELSE STATEMENT
 
@@ -112,9 +112,9 @@ else:
 
 - Go to the # NESTED CONDITIONALS placeholder in the given file and add this code.
   - Note the additional indentation for the nested portion of the code.
-  - Note: horizonal position and vertical position are given variables with values of 3 and 5.
+  - Note: horizontal position and vertical position are given variables with values of 3 and 5.
 
-```csharp 
+```csharp
 if horizontal_position > 0:
     if vertical_position > 0:
         print("Horizontal and vertical are positive.")
@@ -143,11 +143,11 @@ if horizontal_position > 0:
   - >= (Greater Than Or Equal To)
 - Go to # Comparison operators placeholder and uncomment the given code
 
-```csharp 
+```csharp
 first_operand = 5
 second_operand = 10 
 
-print("first_operand == second opereand") # False
+print("first_operand == second operand") # False
 print("first_operand != second operand") # True
 print("first_operand < second operand") # True
 print("first_operand > second operand") # False
@@ -166,7 +166,7 @@ print("first_operand >= second_operand") # False
 - Go to # LOGICAL_OPERATORS, add these conditional statements with logical operators 
   - Note age and sibling_age are given variables with values of 18 and 9:
 
-```csharp 
+```csharp
 #Variables
 age = 10
 sibling_age = 12
@@ -184,14 +184,15 @@ if not age > 10:
 #At Least one value is greater than 9.
 #Sibling age is not greater than 10. 
 ```
+
 ## TERNARY EXPRESSIONS
 
 - Ternary expressions also known as conditional expressions are a more concise way of writing simple if-else statements
 - They have the following syntax:
-  - "value_if_true if conditiom else value_if_false"
+  - "value_if_true if condition else value_if_false"
   - "I will be rich if I win the lottery, otherwise I will be poor."
 
-- Go to #TERNARY EXPRESSION and rewrite the condition as TERRARY EXPRESSION
+- Go to #TERNARY EXPRESSION and rewrite the condition as TERNARY EXPRESSION
   - Note Number is a given variable with the value of 5:
   - Note age and sibling_age are given variables with values of 18 and 9:
 
@@ -211,6 +212,7 @@ print(result)
 # or 
 print("Even" if number % 2 == 0 else "Odd")
 ```
+
 ## MEMBERSHIP CHECKING AND OPERATORS
 
 - Membership checking is powerful technique that allows you to determine if a value is a member of a sequence such as a list, tuple, or string.
@@ -218,7 +220,7 @@ print("Even" if number % 2 == 0 else "Odd")
   - It is very useful feature when working with data structures in python.
 
 - Python provides two operators for membership checking:
-  - The "in" opereator: checks if "banana" is in the list of fruits.
+  - The "in" operator: checks if "banana" is in the list of fruits.
     - For example, we can check whether a value is not present in a sequence.
   
 - The "not in" operator: checks whether a value is not present in a sequence.
@@ -251,6 +253,7 @@ if searched_fruit in fruits:
 else:
     print(searched_fruit, "not_ found")
 ```
+
 ## PROGRAMMOING LOOPS
 
 - Loops are used in programming to execute a block of code multiple times, based on some condition or sequence of data.
@@ -275,21 +278,21 @@ else:
 - The arguments work in similar fashion as those used with slicing:
 
   - Start (optional): This is the starting value of the sequence.
-        - It Specifies where the sequence of numbers should begin. 
+        - It Specifies where the sequence of numbers should begin.
         - If not provided, it is default to 0.
 
   - Stop (required): This is the ending value of the sequence.
         - The range() function generates numbers up to but not including this value.
         - It is a required parameter and you must specify it.
 
-  - Step (optional): This is the step size or the increment by which the sequence should proceed. 
+  - Step (optional): This is the step size or the increment by which the sequence should proceed.
         - It determines the difference between each consecutive value in the sequence.
-        - If not provided, it defaults to 1. 
+        - If not provided, it defaults to 1.
 
 ## PROGRAMMING LOOPS - FOR LOOP
 
 - A for loop can be applied to the result of a range function to iterate through the range of numbers:
-- Here are some examples, you can just replace each example with the next: 
+- Here are some examples, you can just replace each example with the next:
 
 ```csharp 
 for i in range(10): #0 -> 9
@@ -305,16 +308,16 @@ for i in range (-10, 0): # -10 -> 0
     print(i)
 ```
 
-## PROGRAMMING LOOPS - INPUT FUNCTION 
+## PROGRAMMING LOOPS - INPUT FUNCTION
 
 - The input function returns the user's input based on their response to the input's prompt.
-  - "Hello! What is your name?" 
+  - "Hello! What is your name?"
 
 - The input function always returns the data as a string.
     - Therefore, the result of the input function may need to be cast to another data type.
-    - "Hello! How old are you?" 
+    - "Hello! How old are you?"
 
-- Go to #INPUT and add this code: 
+- Go to #INPUT and add this code:
 
 ```csharp 
 name = input("What is your name?")
@@ -326,16 +329,16 @@ salary = float(input("What is your current salary?"))
 
 ## PROGRAMMING LOOP - WHILE LOOP
 
-- While loops are used to execute a block of code multiple times, based on a sepcific condition.
+- While loops are used to execute a block of code multiple times, based on a specific condition.
 
 - The loop will continue to execute the block of code until the condition is no longer true.
     - While loops are best used when you don't know exactly how many iterations are needed.
 - Go to # WHILE LOOP and add this code:
 
 ```csharp
-favourite_number = 0 
-while favourite_number < = 100: 
-    favoureite_number = int(input("Enter your favourite number, 100 % up to quit: "))
+favorite_number = 0 
+while favorite_number < = 100: 
+    favorite_number = int(input("Enter your favorite number, 100 % up to quit: "))
 ```
 
 - In Python, the else block can be applied to a while loop.
@@ -345,28 +348,28 @@ while favourite_number < = 100:
 - Modify the while loop as follows to include an else block:
 
 ```csharp
-favourite_number = 0
-while favourite_number < 100:
-    favourite_number = int(input("Enter your favourite number, 100 & up to quit:"))
+favorite_number = 0
+while favorite_number < 100:
+    favorite_number = int(input("Enter your favorite number, 100 & up to quit:"))
 
 else:
-    print("Your favourite number is too big!")
+    print("Your favorite number is too big!")
 ```
 
 - We can use the "break" statement to exit a loop early
 - Modify the while loop as follows to include a break statement:
 
 ```csharp
-favourite_number = 0 
-while favourite_number < 100:
-    favourite_number = int(input("Enter your favourite number (but not 7!, 100 & up to quit:"))
+favorite_number = 0 
+while favorite_number < 100:
+    favorite_number = int(input("Enter your favorite number (but not 7!, 100 & up to quit:"))
 
-    if favourite_number == 7:
+    if favorite_number == 7:
         print("You broke this game!")
         break
 
 else: 
-    print("Your favourite number is too big!")
+    print("Your favorite number is too big!")
 ```
 
 ## LOOP CONTROL STATEMENTS - CONTINUE
@@ -426,7 +429,6 @@ while number > 0:
     print(number)
 
 # How could we avoid this?
-
 # To prevent the infinite loop
 number = 10 
 while number > 0:
@@ -435,3 +437,5 @@ while number > 0:
     number += 1
     print(number)
 ```
+
+## NESTED LOOPS
