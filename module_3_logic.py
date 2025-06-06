@@ -1,21 +1,27 @@
+""" Module 3"""
+
+__author__ = "Ivan Estropigan"
+__version__ = "1.0"
+__credits__ = "COMP-1327 DEV TEAM"
+
 # Variables
 age = 18
 sibling_age = 9
 
-fruits = ['banana', 'strawberry', 'cherry']
+fruits = ['banana', 'strawberry', 'apple', 'cherry']
 
 number = 0
 horizontal_position = 0
 vertical_position = 0
 
-# If, elif and else 
-if age < 13: 
+# If, elif and else
+if age < 13:
     print("Child")
 
 elif age < 18:
     print("Teen")
 
-elif age < 20: 
+elif age < 20:
     print("Young Adult")
 
 else: 
@@ -29,7 +35,7 @@ if horizontal_position > 0:
         print("Horizontal is positive, but vertical is not")
 else: 
 
-    if vertical_position > 0: 
+    if vertical_position > 0:
         print("Vertical is positive but horizontal is not.")
     
     else:
@@ -38,16 +44,16 @@ else:
 
 # COMPARISON OPERATORS
 first_operand = 5
-second_operand = 10 
+second_operand = 10
 
-print("first_operand == second opereand") # False
+print("first_operand == second operand") # False
 print("first_operand != second operand") # True
 print("first_operand < second operand") # True
 print("first_operand > second operand") # False
 print("first_operand <= second operand") # True 
 print("first_operand >= second_operand") # False
 
-#If statement age and sibling
+#LOGICAL_OPERATORS
 if age > 0 and sibling_age > 0:
     print("Both values are positive.")
 if age > 9 and sibling_age > 9:
@@ -55,7 +61,7 @@ if age > 9 and sibling_age > 9:
 if not age > 10:
     print("Age is not greater than 10.")
 
-# TERNARY EXPRESSIONS 
+# TERNARY EXPRESSIONS
 if number % 2 == 0:
     result = "Even"
 
@@ -81,9 +87,9 @@ searched_fuit = "banana"
 #    print(searched_fruit, "not_ found")
 
 # Iterate through a collection (list of fruit):
-# 'fruit' isnew (temporary) variable which is 
-# available only withinthe for loop block.
-for fruit in fruits: 
+# 'fruit' is new (temporary) variable which is
+# available only within the for loop block.
+for fruit in fruits:
     print("fruit")
 
 for i in range(10): #0 -> 9
@@ -92,7 +98,7 @@ for i in range(10): #0 -> 9
 for i in range(2, 8): # 2 -> 7
     print(i)
 
-for i in range(1, 10, 2): #Starts at 1 and increment by 2 1- > 9 
+for i in range(1, 10, 2): #Starts at 1 and increment by 2 1- > 9
     print(i)
 
 for i in range (-10, 0): # -10 -> 0
@@ -107,25 +113,25 @@ print(f"name: {name} \nSalary: ${salary:.2f}")
 # print(f"Name: {name} \nSalary: ${salary:,.2f}")
 
 # PROGRAMMING LOOPS - WHILE LOOP
-favourite_number = 0
-while favourite_number < 100:
-    favourite_number = int(input("Enter your favourite number (but not 7!), 100 & up to quit: "))
+favorite_number = 0
+while favorite_number < 100:
+    favorite_number = int(input("Enter your favorite number (but not 7!), 100 & up to quit: "))
 
-    if favourite_number == 7:
+    if favorite_number == 7:
         print("You broke this game!")
         break
     
-else: 
-    print("Your favourite number is too big!")
+else:
+    print("Your favorite number is too big!")
 
 # CONTINUE
 # USE a for loop to iterate over the range of integers from 1 to 9 (exclusive).
 for number in range (1, 10):
     # Use continue statement to skip over multiples of 3.
     if number % 3 == 0:
-
         continue
-    # Print all other integers 
+
+    # Print all other integers
     print(number)
 
 # Output: 1, 2, 4, 5, 7, 8
@@ -135,7 +141,7 @@ for number in range (1, 10):
 # USE a for loop to iterate over the range of integers
 for number in range (1, 10):
     # Use the break statement to exit the loop if the integer is greater than 5
-    if number > 5: 
+    if number > 5:
         break
     # Print all other integers.
     print(number)
